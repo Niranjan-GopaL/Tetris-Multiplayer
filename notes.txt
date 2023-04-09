@@ -1,0 +1,3 @@
+OBJECTIVE : Learn about Sockets and Networking by Building a Multiplayer Game
+
+multiple clients connected to server
