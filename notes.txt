@@ -1,3 +1,56 @@
 OBJECTIVE : Learn about Sockets and Networking by Building a Multiplayer Game
 
 multiple clients connected to server
+
+
+
+PROGRESS LOGS ---------------------------------------------------------------------------
+
+1) updated  pip and installed pygame (from cmd)
+
+2) client.py
+
+
+<---------------------------- BASIC LAYOUT ------------------------------------->
+def redrawWindow():
+    win.fill((255,255,255))
+    pygame.display.update()
+
+def main():
+    run = True
+
+    while run:
+        # if an event in pygame.event is QUIT then we quit otherwise
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                run=False
+                pygame.quit()
+
+        redrawWindow()
+
+<------------------------------------------------------------------------------>
+
+
+3)  We'll try to have a basic box moving around.
+
+
+class Player:
+    def __init__(self,x,y,width,height,color):
+        self.x = x
+        self.y = y
+        self.width = width
+        self.height = height
+        self.color = color
+
+        self.rect = (x,y,width,height)
+
+    def drawse(self,win):
+        pygame.draw.rect(win,self.color,self.rect)
+
+    def move(self):
+        pygame.keys.get_pressed()
+
+        
+        
+
+    
